@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="windows, drywall, paint, roofing, drywall, oakland, bay, area">
+	<meta name="description" content="We can help you complete your next project, reach out to us! <%= number %>">
+
+	<title>How to repair a roof oakland ca roofing services drywall installation, fences, windows, demolition in san leandro, oakland, castro valley, hayward, berkeley</title>
+<!--
+Snapshot Template
+http://www.templatemo.com/tm-493-snapshot
+
+Zoom Slider
+https://vegas.jaysalvat.com/
+
+Caption Hover Effects
+http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/component.css">
+	
+    <link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body ng-app="myApp" ng-controller="galleryCtrl" id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+
+<!-- Preloader section -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+<!-- Navigation section  -->
+
+<%- include partials/navbar.ejs %>
+
+<!-- Gallery section -->
+
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-title">
+          <h1>Gallery</h1>
+        </div>
+      </div>
+
+      <ul class="grid cs-style-4">
+        <li ng-repeat="gallery in images" class="col-md-6 col-sm-6">
+          <figure>
+            <div><a href="#" data-featherlight="{{ gallery.image }}"><img ng-src="{{ gallery.image }}" ng-alt="{{ gallery.alt }}"></a></div>
+            <figcaption>
+              <h1>Complete</h1>
+              <a href="/contact">Contact Us!</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer section -->
+
+<%- include partials/footer.ejs %>
+
+<!-- Back top -->
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Javascript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/vegas.min.js"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/smoothscroll.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/custom.js"></script>
+<script src="js/myApp.js"></script>
+
+
+</body>
+</html>

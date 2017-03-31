@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="windows, drywall, paint, roofing, drywall, oakland, bay, area">
+	<meta name="description" content="Best Home Installation Services! Roofing, paint, windows, door, fence, drywall, gutters, and chimney installations in the bay area, oakland, san leandro, hayward, castro valley, alameda, san francisco">
+
+	<title>Professional Painting, window, door, fence, drywall, gutters, and chimney installations in oakland ca, san leandro, san francisco, alameda, concord, san mateo, castro valley, bay area</title>
+<!--
+Snapshot Template
+http://www.templatemo.com/tm-493-snapshot
+
+Zoom Slider
+https://vegas.jaysalvat.com/
+
+Caption Hover Effects
+http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/component.css">
+	
+    <link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body ng-app="myApp" id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+
+<!-- Preloader section -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+<!-- Navigation section  -->
+<%- include partials/navbar.ejs %>
+
+<!-- Home section -->
+
+<section id="home">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="wrapper col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <h1 class="wow animated infinite pulse" data-wow-delay="0.6s">Perez Contracting</h1>
+        <p>Handyman</p>
+        <p class="wow fadeInUp" data-wow-delay="0.9s">We deliver the best service in Oakland, CA</br><phone><%= number %></phone></br> We work all over the bay area! Window installations, Drywall, Roofing, Demolition, Gutters, Fence Installations, Doors, Basement Conversions</p>
+        <a href="/gallery" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Click Here For Examples!</a>
+        <a href="/contact" class="smoothScroll btn btn-success btn-lg wow animated infinite pulse" data-wow-delay="1.2s">Contact Us</a>
+        <div class="col-md-12">
+        	<a href="#">
+        		<img width="45%" src="/images/yelp.png">
+        	</a>
+        </div>
+        <div class="address">
+	      	<p style="color: white;">Commercial and Residential!<br/>
+	      	You can also send us an email by clicking the button<br/><br>
+	      	<a class="btn btn-success" href="mailto:perezdionicio76@gmail.com">Send Email</a>
+	      	</p>
+	    </div>
+	    <div ng-controller="galleryCtrl" id="home-carousel">
+	    	<div ng-repeat="item in images" class="item"><img height="400px" ng-src="{{ item.image }}" ng-alt="{{ item.alt }}"></div>
+		</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer section -->
+
+
+
+				<%- include partials/footer.ejs %>
+                
+
+
+<!-- Back top -->
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Javascript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vegas.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myApp.js"></script>
+
+</body>
+</html>
