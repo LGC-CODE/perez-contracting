@@ -149,6 +149,12 @@ a:hover, a:active, a:focus {
   position: relative;
 }
 
+.about-text {
+  margin: 45% 0 5%;
+  color: white;
+  text-align: center;
+}
+
 #gallery,
 #contact, footer {
   text-align: center;
@@ -218,7 +224,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .navbar-default {
-  background: rgba(37, 60, 36, 0.7);
+  background: rgba(25, 108, 21, 0.8);
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
   /* border: none; */
   margin-bottom: 0px !important;
@@ -370,13 +376,19 @@ phone {
 }
 
 .wrapper {
-  background: rgba(14, 51, 24, 0.53);
+  background: rgba(141, 141, 141, 0.6);
   padding: 5%;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-top: 5%;
 }
 
+.wrapper ul li {
+  list-style: none;
+  color: white;
+  font-size: 1.5pc;
+  text-shadow: -4px 2px 2px black;
+}
 
 /*---------------------------------------
 	About Section              
@@ -405,6 +417,7 @@ phone {
   padding: 25px;
   position: relative;
   height: 550px;
+  margin-top: 25%;
 }
 
 #about .about-img img {
@@ -413,6 +426,18 @@ phone {
   left: -120px;
   bottom: -325px;
   padding: 12px;
+}
+
+.about-thumb span {
+  font-size: 5pc;
+  border-radius: 74px;
+  border: 1px solid white;
+  padding: 5%;
+  position: absolute;
+  top: -12%;
+  left: 33%;
+  background: #2b442dcc;
+  color: white;
 }
 
 #about .team-thumb {
@@ -520,7 +545,7 @@ phone {
 
 footer {
   color: #000;
-  background: rgba(37, 60, 36, 0.7);
+  background: rgba(25, 108, 21, 0.8);
 }
 
 #contact {
@@ -788,7 +813,8 @@ footer {
 	margin-top: 30%;
   }
   #about .about-thumb {
-	height: auto;
+    height: auto;
+    padding: 60px 23px;
   }
 
 }
@@ -808,7 +834,7 @@ footer {
 }
 
 .blog-body {
-  background: #1a4a72b3;
+  background: #94979ccc;
   padding: 5%;
 }
 

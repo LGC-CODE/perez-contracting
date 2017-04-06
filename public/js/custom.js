@@ -33,13 +33,13 @@ $(document).ready(function() {
   $(function() {
     $('body').vegas({
         slides: [
-            { src: '/images/con1.jpg' },
-            { src: '/images/con2.jpg' },
-            { src: '/images/con3.jpg' }
+            { src: '/images/con5.jpg' },
+            { src: '/images/con11.jpg' },
+            { src: '/images/con16.jpg' }
         ],
         timer: false,
-        transition: [ 'zoomIn', ],
-        animation: ['kenburns']
+        transition: 'random',
+        animation: 'random'
     });
   });
 
@@ -49,10 +49,9 @@ $(document).ready(function() {
   $(document).ready(function() {
        $("#home-carousel").owlCarousel({
           items : 1,
-          autoplay: true,
-          autoplayTimeout: 5000,
-          nav: false
-      });
+          autoplay: false,
+          autoplayHoverPause: true
+      }).trigger('owl.play', 5000);
     });
     
 
