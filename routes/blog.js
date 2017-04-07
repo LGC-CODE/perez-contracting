@@ -57,9 +57,9 @@ router.post('/new', upload.any(), function(req, res, next){
 		if(err){ return next(err); }
 
 		console.log('saved');
-		res.redirect('http://pabloshardwoodfloor.com/blog');
+		res.redirect('http://perezcontractingca.com/blog');
 
-	})
+	});
 });
 
 router.param('single', function(req, res, next, id){
