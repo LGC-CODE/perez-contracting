@@ -25,14 +25,5 @@
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>http://perezcontractingca.com/blog/single/</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://perezcontractingca.com/blog/</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
+
 </urlset>
