@@ -10,7 +10,7 @@ var prerenderServer = require('prerender-node');
 require('./models/articleModel');
 require('./models/commentsModel');
 
-mongoose.connect('mongodb://104.236.186.74/perez-db' , function(err){
+mongoose.connect('mongodb://104.236.186.74:27017/perez-db' , function(err){
 
   console.log('servers running...');
 
