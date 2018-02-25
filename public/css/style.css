@@ -161,15 +161,39 @@ a:hover, a:active, a:focus {
 }
 
 .overlay {
-  background: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 109vh;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.9);
+  z-index: 1;
 }
 
+.inner-box {
+  width: 50%;
+  position: relative;
+}
+
+.close-btn {
+	width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  right: -53px;
+  top: -53px;
+}
+
+.close-btn span {
+	width: 20px;
+	height: 21px;
+}
 
 
 /*---------------------------------------
@@ -740,11 +764,7 @@ footer {
 -----------------------------------------*/
 
 @media (max-width: 980px) {
-/* 
-  #home, .overlay {
-	height: 50vh;
-  }
-*/
+  
   #about .team-thumb {
 	margin-top: 32px;
   }
@@ -753,10 +773,6 @@ footer {
 
 
 @media (max-width: 767px) {
-
-  #home, .overlay {
-	height: 122vh;
-  }
 
   #about .about-thumb {
 	padding: 32px;

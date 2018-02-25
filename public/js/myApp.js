@@ -13,15 +13,23 @@ app.directive('ngAlt', function () {
 	};
 });
 
-app.controller('galleryCtrl', ['$scope', function($scope){
+app.controller('homeCtrl', ['$scope', '$window', function($scope, $window){
+	$scope.closeModal = function(){
+		$('.overlay').fadeOut(1500);
+	}
+}]);
+
+app.controller('galleryCtrl', ['$scope', '$window', function($scope, $window){
 	$scope.images = [];
+	var limit = $window.location.pathname === '/' ? 12 : 63;
+	console.log(limit);
 	
-	for(var i = 1; i <= 63; i++){
-		var gallery = {};
-		gallery.image = `/images/con${i}.jpg`;
-		gallery.alt = 'drywall, fences, concrete, earthquake reinforcement, gutters, paint, demolition, carpentry, windows, doors';
-		
-		console.log(gallery);
-		$scope.images.push(gallery);
+	for(var index = 1; index <= limit; index++){
+		if(index !== 10 && index !== 11) {
+			var gallery = {};
+			gallery.image = `/images/con${index}.jpg`;
+			gallery.alt = 'drywall, fences, concrete, earthquake reinforcement, gutters, paint, demolition, carpentry, windows, doors';
+			$scope.images.push(gallery);
+		}
 	}
 }]);
